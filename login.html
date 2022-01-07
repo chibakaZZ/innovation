@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            * {
+                background-image: url(https://wallpapercave.com/wp/eTgd2o2.jpg);
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                color: white;
+            }
+            .wrap {
+                display: flex;
+                width: 100%;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(238, 238, 238);
+            }
+
+            .wrap .form {
+                width: 375px;
+                padding: 1rem;
+                border-radius: 10px;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .wrap .form input {
+                width: 100%;
+                border: 1px solid transparent;
+                background-color: rgb(238, 238, 238);
+                border-radius: 5px;
+                padding: 10px;
+                margin-bottom: 1rem;
+            }
+            .wrap .form label {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .wrap .form .btn {
+                background-color: rgb(190, 116, 243);
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                border-color: rgb(190, 116, 243);
+                transition: .3s ease-in-out;
+            }
+            .wrap .form .btn:hover {
+                background-color: white;
+                color: rgb(190, 116, 243);
+            }
+
+            .backdrop {
+                width: 100%;
+                height: 100vh;
+                background-color: rgb(0, 0, 0);
+                position: fixed;
+                top: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                visibility: hidden;
+                transition: .4s ease-in-out;
+            }
+
+            .backdrop .modal {
+                position: relative;
+                width: 500px;
+                padding: 2rem 1rem;
+                border-radius: 10px;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                flex-direction: column;
+                color: rgb(99, 99, 99);
+            }
+
+            .backdrop .modal img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+
+            .backdrop .modal .close {
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+                cursor: pointer;
+            }
+
+            .open {
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="wrap">
+        <div class="form">
+            <label for="hobby">И-мэйл хаяг</label>
+            <input placeholder="Email" id="Email" type="text">
+            <label for="fullname">Нууц үг</label>
+            <input placeholder="Password" id="Password" type="text">
+            <input onclick="nevtreh()" class="btn" type="button" value="Нэвтрэх" />
+            <a href="./register.html" class="mb-4 text-right">Бүртгүүлэх</a>
+        </div>
+    </div>
+    
+
+    <script src="register.js"></script>
+</body>
+</html>
+    </body>
+</script>
+
+</body>
+</html>
